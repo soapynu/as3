@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/login-page.css">
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    <form name="loginform" onSubmit="return validateForm();" action="index.html" method="post">
+  
+      <input type="text" name="usr" 
+      class="login-form-field" placeholder="username"> <br>
+      <input type="password" name="pword" class="login-form-field" placeholder="password">
+      <input type="submit" value="Login" id="login-form-submit" onSubmit="validateForm();" onmouseover="mouseOver()" onmouseout="mouseOut()"/>
+    </form>
+
+  </main>
+  <script>
+    const keyBoard=document.querySelector('.login-form-field')
+  keyBoard.addEventListener('keydown', e =>{
+    console.log(e)
+    if(e.keyCode===50){
+      alert('Sorry! You can not use '+e.key)
+    }
+  })
+    function mouseOver() {
+  // Change button background color on mouseover
+  document.getElementById("login-form-submit").style.backgroundColor = "blue";
+}
+
+// Function to handle mouseout event
+function mouseOut() {
+  // Change button background color on mouseout
+  document.getElementById("login-form-submit").style.backgroundColor = "";
+}
+    function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "John"; 
+        var password = "123";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+window.location="login.html";
+            return false;
+        }
+  }
+  
+</script>
+</body>
+
+</html>

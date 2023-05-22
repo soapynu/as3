@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2{
+  color: rgb(255, 255, 255);
+ 
+}
+body{
+  background: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+ 
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  
+  text-align: center;
+}
+header{
+  
+  
+  margin-top: 10px;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  
+ 
+}
+.teamlabel{
+  text-align: center;
+  margin-top: 50px;
+  size: 150%;
+ 
+}
+footer{
+  height: 300px;
+  background-color: hsl(350, 74%, 78%);
+}
+
+
+.bottomnav{
+ 
+width:100%;
+height: 100%;
+display: flex;
+
+flex-wrap: wrap;
+flex-flow: row;
+
+}
+
+.footers{
+  display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ width:33%;
+ margin: 30px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+
+}
+.footerp2{
+  margin-top: 0px;
+}
+
+
+aside{
+  width: 300px;
+  padding-left: 15px;
+  margin-left: 100px;
+  
+
+  height: 300px;
+  float: left;
+  font-style: italic;
+  background-color: lightgray;
+}
+article{
+  height: 400px;
+}
+
+.team .team_member{
+  background: #87CEFA;
+  margin: 20px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  width: 300px;
+  padding: 70px;
+  line-height: 20px;
+  color: #000;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #000;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #000;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.footer-picture {
+  list-style: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-flow: row;
+ flex-direction: row;
+margin-top: 20px;
+margin-left: 5px;
+}
+.footer-picture li{
+  margin: 0 10px;
+
+
+}
+.footer-picture a{
+  text-decoration: none;
+  color: #1c1919;
+}
+.footer-picture a i{
+
+  font-size: 0.9rem;
+}
+.footer-picture a:hover{
+  color: #fff;
+}
